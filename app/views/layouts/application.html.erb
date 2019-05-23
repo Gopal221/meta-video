@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MetaVideo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="http://uxart.io/downloads/metavideo-html/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://uxart.io/downloads/metavideo-html/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="http://uxart.io/downloads/metavideo-html/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="http://uxart.io/downloads/metavideo-html/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://uxart.io/downloads/metavideo-html/vendors/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="http://uxart.io/downloads/metavideo-html/css/default/style.css">
+    <link rel="stylesheet" type="text/css" href="http://uxart.io/downloads/metavideo-html/css/responsive/responsive.css">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%=render partial: 'shared/header'%>
+    <%= yield %>
+    <%=render partial: 'shared/footer'%>
+  </body>
+</html>
